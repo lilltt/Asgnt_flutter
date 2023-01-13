@@ -171,7 +171,7 @@ class _HomeState extends State<Home> {
                         checkColor: Color(0xff009688),
                         items: genreList
                             .map((item) =>
-                                MultiSelectItem<GenreName?>(item, name))
+                                MultiSelectItem<GenreName?>(item, item.name))
                             .toList(),
                         listType: MultiSelectListType.LIST,
                         onConfirm: (values) {
